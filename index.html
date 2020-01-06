@@ -1,6 +1,6 @@
 <script type="text/babel" data-presets="env,react">
   class Clock extends React.Component {
-    state = { theTime: null };
+    state = { theTime: new Date().toLocaleTimeString() };
 
     componentDidMount() {
       setInterval(() => {
